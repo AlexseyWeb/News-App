@@ -1,0 +1,113 @@
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #413942 14%, #26a69a 64%);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #661073;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #ffffff;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-container .card-title {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.card .card-image .card-title {
+    font-size: calc(0.6rem + 1vw);
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.news-container .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: dense;
+    grid-gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .news-container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr r;
+        grid-auto-flow: dense;
+        grid-gap: 2rem;
+    }
+    .date {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .news-container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr r;
+        grid-auto-flow: dense;
+        grid-gap: 2rem;
+    }
+    .date {
+        font-size: calc(0.6rem + 0.1vw);
+        margin-bottom: 1rem;
+    }
+}
+
+.back_to_top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #26a69a;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+}
+
+.back_to_top:hover {
+    background: #080808;
+}
+
+.back_to_top-show {
+    display: block;
+}
+
+.disclaimer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.disabled {
+    color: black;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: rgb(250, 248, 248);
+    font-family: 'Roboto', sans-serif;
+}

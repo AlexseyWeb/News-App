@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Новостик</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class=" teal darken-1 ">
+        <div class="nav-wrapper ">
+            <a href="# " class=" brand-logo ">Новостик</a>
+        </div>
+    </nav>
+    <main>
+        <div class="search-controls ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col s12 m6 ">
+                        <div class="card ">
+                            <form class="search-form col s12" name="newsControls">
+                                <div class="card-content ">
+                                    <span class="card-title ">Поиск новостей</span>
+                                    <div class="input-field ">
+                                        <select name="country" id="country">
+                                            <option value="ru">Россия</option>
+                                            <option value="uk">Украина</option>
+                                             <option value="us">США</option>
+                                             <option value="gb">Англия</option>
+                                             <option value="de">Германия</option>
+                                         </select>
+                                        <label>Выберите вашу страну</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="autocomplete-input ">Поиск</label>
+                                        <input type="text " id="autocomplete-input " placeholder="Поиск" class="input-field autocomplete" name="search" />
+
+                                    </div>
+                                </div>
+                                <div class="card-action ">
+                                    <button class="btn waves-effect waves-light " type="submit " name="action ">
+                    Поиск
+                    <i class="material-icons right ">search</i>
+                  </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-container">
+            <div class="container ">
+                <div class="row grid-container "></div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Смотри ниже</h5>
+                    <p class="grey-text text-lighten-4">Маленькое приложение для поиска новостей по странам и ключевым словам</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Ссылки</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Главная</a></li>
+                        <li><a class="grey-text text-lighten-3 modal-trigger disclaimer" href="#modal1">Обо мне</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">-</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">-</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Все права защишены
+            </div>
+        </div>
+    </footer>
+    <a class="back_to_top btn-floating pulse" title="Наверх">↑</a>
+    <!-- Compiled and minified JavaScript -->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>ДИСКЛЕЙМЕР</h4>
+            <p>Данный ресурс носит исключительно развлекательный характер и никак не желает оскорбить кого-либо</p>
+            <p>Меня зовут Алексей мне нравится программирование а именно, все то, что относится к веб разработки!</p>
+            <p>Мой github <a href="https://github.com/AlexseyWeb">Профиль</a></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Понятно</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script src="app.js "></script>
+    <script src="arrow.js"></script>
+</body>
+
+</html>
